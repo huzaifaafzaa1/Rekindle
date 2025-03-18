@@ -1,6 +1,27 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Josefin_Sans, Anton, Inter } from 'next/font/google';
 import "./globals.css";
+
+// Configure the fonts
+const josefinSans = Josefin_Sans({
+  subsets: ['latin'],
+  variable: '--font-josefin-sans',
+});
+
+const anton = Anton({
+  subsets: ['latin'],
+  weight: '400', // Anton only has one weight
+  variable: '--font-anton',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +46,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${josefinSans.variable} ${anton.variable} ${inter.variable} antialiased`}
       >
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
