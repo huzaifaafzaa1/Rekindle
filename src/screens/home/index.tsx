@@ -13,7 +13,7 @@ const HomePage = () => {
       <OurServices/>
       <BusinessImprovement/>
       <CustomerSuccessStories/>
-      <TitleWithLogos title="Our Happy Clients"/>
+      <TitleWithLogos title="Our Happy Clients"/> 
     </div>
   )
 }

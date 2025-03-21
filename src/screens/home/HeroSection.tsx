@@ -8,13 +8,13 @@ const HeroSection = () => {
     { id: "04", text: "LEAD GENERATION" },
   ];
   return (
-    <div className="herosection relative bg-gradient-to-r from-[var(--color-blue-gradient-start)] to-[var(--color-blue-gradient-end)] h-[580px]">
-      <div className="absolute h-[400px] w-[1354px] border-2 border-solid border-black">
-        <Image src="/images/background.svg" alt="" height={400} width={1354} />
+    <div className="herosection h-screen relative bg-gradient-to-r from-[var(--color-blue-gradient-start)] to-[var(--color-blue-gradient-end)] ">
+      <div className="absolute h-[80vh] w-full ">
+        <Image src="/images/herobackground.svg" alt="" height={0} width={0} fill className="object-cover" />
       </div>
 
       {/* text of herosection */}
-      <div className="absolute top-[15%] left-[15%]">
+      <div className="absolute top-[10%] left-[10%] md:top-[15%] md:left-[15%]">
         {services.map(({ id, text, isFirst }) => (
           <div key={id} className="flex gap-3 items-center my-2">
             <p
@@ -24,7 +24,7 @@ const HeroSection = () => {
               {id}
             </p>
             <h1
-              className={`text-5xl font-anton text-[70px] ${
+              className={` text-4xl md:text-7xl font-anton ${
                 isFirst ? "text-[var(--color-blue-dark)]" : "text-white"
               }`}
             >
@@ -35,15 +35,16 @@ const HeroSection = () => {
       </div>
 
       <div className="absolute top-[20%] left-[20%] z-10">
-        <p className="text-white">We Sell Leads</p>
+        <p className="text-white hidden  md:block">We Sell Leads</p>
       </div>
 
-      <div className="absolute bottom-[10%] left-[15%] h-[50px] w-[50px] flex justify-center items-center">
+      <div className="absolute bottom-[10%] left-[10%] md:left-[15%] h-[50px] w-[50px] flex justify-center items-center">
         <Image src="/icons/down.svg" alt="" height={50} width={50} />
       </div>
 
-      <div className="h-[80px] w-[1000px] absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center items-center">
-        <Image src="/images/herobottom.svg" alt="" height={80} width={1000} />
+     {/*bottom image  */}
+      <div className="h-[10vh] w-[60%] absolute bottom-0 left-1/2 -translate-x-1/2 flex justify-center items-center">
+        <Image src="/images/herobottom.svg" alt="" height={0} width={0} fill  />
       </div>
     </div>
   );

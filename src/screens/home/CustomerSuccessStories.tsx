@@ -29,13 +29,13 @@ const testimonials = [
 
 const CustomerSuccessStories = () => {
   return (
-    <div className="mt-20 border-2">
+    <div className="mt-3 mx-2 md:mt-20 border-2">
       <div className="text-center my-4">
-        <h1 className="text-[32px] font-semibold my-2">Customer success stories</h1>
+        <h1 className="sm:text-[28px] md:text-[32px] font-semibold my-2">Customer success stories</h1>
         <p className="text-[var(--color-light-slate)]">See what other small businesses have to say about Bark</p>
       </div>
 
-      <div className="flex justify-center items-center gap-6 ">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-6 ">
         {testimonials.map((item, index) => (
           <div key={index} className="p-6 my-2 flex flex-col justify-center items-center rounded-[10px] border">
             <div className="relative ">
@@ -48,7 +48,7 @@ const CustomerSuccessStories = () => {
                 <AvatarFallback>play icon</AvatarFallback>
               </Avatar>
             </div>
-            <p className="my-4 w-[265px] text-center text-[var(--color-dark-slate)]">{item.text}</p>
+            <p className="my-4  text-center text-[var(--color-dark-slate)]">{item.text}</p>
             <hr className={`mt-4 w-48 border ${item.color === "blue" ? "border-[var(--color-blue)]" : 
              item.color === "yellow" ? "border-[var(--color-yellow)]" : 
              "border-[var(--color-green)]"}`} 

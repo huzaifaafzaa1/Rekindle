@@ -14,12 +14,15 @@ const logos=[
 
 const TitleWithLogos: React.FC<TitleWithLogosProps> = ({title}) => {
   return (
-    <div className=" my-3 mt-20 border-2">
+    <div className=" my-3 mt-3 md:mt-20 border-2">
         <h1 className="text-center text-4xl font-medium my-5">{title}</h1>
         <div className="my-3 flex justify-center items-center">
-            <div className="h-[70px] w-[140px] flex justify-center items-center gap-20">
-               {logos.map((item,index)=>(<Image key={index} src={item.logo} alt="logo" height={70} width={140}/>)) }
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 place-items-center">
+            {logos.map((item, index) => (
+            <Image key={index} src={item.logo} alt="logo" height={70} width={140} />
+            ))}
+          </div>
+
         </div>
     </div>
   )

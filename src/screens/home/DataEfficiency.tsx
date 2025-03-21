@@ -2,8 +2,10 @@ import Image from "next/image"
 
 const DataEfficiency = () => {
   return (
-    <div className='flex justify-center items-center mt-20'>
-        <Image src="/images/dataefficiency.svg" alt="data efficiency" height="400" width="800"/>
+    <div className='mt-3 md:mt-20 flex  justify-center items-center  border-2'>
+      <div className="h-[80vh] w-[85%] relative ">
+        <Image src="/images/dataefficiency.svg" alt="" fill/>
+      </div>
     </div>
   )
 }
