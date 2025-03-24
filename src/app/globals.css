@@ -85,10 +85,14 @@
   --color-blue-primary: #2563EB;        /*this is color is for buttons*/
   --color-light-slate: #64748B;
   --color-dark-slate: #1E293B;
+  --color-blue-bg: #1843DB;
+  --color-navy: #1E3A8A;
+  --color-purple: #4B1969;
 
   /* Gradient */
   --color-blue-gradient-start: #2447A2;
   --color-blue-gradient-end: #0B2158;
+  --primary-gradient: linear-gradient(0deg, #691B6E 0%, #691B6E 86%, #381865 100%);
 
   /* color for hr */
   --color-blue: #3B82F6;
@@ -112,6 +116,10 @@
 
 .font-inter {
   font-family: var(--font-inter);
+}
+
+.purple-bg{
+  background: var(--primary-gradient);
 }
 
 .dark {

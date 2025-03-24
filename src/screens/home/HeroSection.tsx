@@ -9,6 +9,7 @@ const HeroSection = () => {
   ];
   return (
     <div className="herosection h-screen relative bg-gradient-to-r from-[var(--color-blue-gradient-start)] to-[var(--color-blue-gradient-end)] ">
+      {/*background Image  */}
       <div className="absolute h-[80vh] w-full ">
         <Image src="/images/herobackground.svg" alt="" height={0} width={0} fill className="object-cover" />
       </div>
