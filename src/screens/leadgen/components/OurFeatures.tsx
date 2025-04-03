@@ -13,12 +13,12 @@ const features = [
 
 const OurFeatures = () => {
   return (
-    <div className="mt-3 md:mt-20 ">
+    <div className="mx-auto w-[90%] lg:w-[75%] mt-3 md:mt-20 ">
         <SectionHeader title="Our Features" 
         description="Let our marketing experts connect you instantly with local customers currently shopping for a vehicle. 
         A targeted marketing programs through our trusted media channels, including."/>
-        <div className=" mt-10 flex justify-center items-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-3/4">
+        <div className=" mt-4 flex justify-center items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
                {features.map((feature,index)=>(<FeaturesCard  key={index} icon={feature.icon} title={feature.title} text={feature.text}/>))} 
             </div>
         </div>

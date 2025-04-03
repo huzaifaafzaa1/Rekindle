@@ -1,0 +1,57 @@
+{
+    "leadGeneration": {
+      "title":{    
+      "title1": "Automate",
+      "title2": "lead generation",
+      "title3": "workflow at scale"
+      },
+      "description": "Captain Data manages your most ambitious sales & marketing workflows by extracting, enriching and automating data from 30+ sources on the web.",
+      "buttons": {
+        "startFreeAutomation": "Start Free Automation",
+        "exploreWorkflows": "Explore Workflows"
+      }
+    },
+  
+      "dataExtraction": {
+        "buttons": {
+          "withoutCaptain": "Without Captain",
+          "withCaptain": "With Captain"
+        },
+        "sections": [
+          {
+            "title": "Extract",
+            "description": "Easily extract structured data from +30 sources like LinkedIn, Twitter or Google Maps."
+          },
+          {
+            "title": "Enrich",
+            "description": "Automatically enrich, filter and aggregate your data with 3rd-party providers."
+          },
+          {
+            "title": "Integrate",
+            "description": "Seamlessly integrate everything inside your work tools: spreadsheets, CRMs, outreach tools..."
+          }
+        ]
+      },
+   "scaleAutomations": {
+    "title": "Ready to scale your automations?",
+    "description1": "Try Captain Data today and unlock your full potential." ,
+    "description2": "You are a few clicks away from a whole new automation world.",
+    "cta": [
+      "No credit card required.",
+      "14 days free trial with no commitment."
+    ],
+    "buttons": {
+      "startFreeAutomation": "Start free automation"
+    }
+  },
+      "techDebt": {
+        "title": "How much is tech debt costing you?",
+        "description": "Engineers spend ~33% of their time dealing with tech debt. Find out how much it’s costing you with our tech debt calculator.",
+        "buttons": {
+          "calculateYourCost": "Calculate your cost"
+        }
+      }
+      
+    }
+    
+    

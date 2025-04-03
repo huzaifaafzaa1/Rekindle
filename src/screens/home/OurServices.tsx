@@ -35,7 +35,7 @@ const services = [
 
 const OurServices = () => {
   return (
-    <div className="border-2 p-3 mt-3 flex flex-col justify-center gap-6 items-center md:flex-row md:mt-20">
+    <div className="mx-auto w-[90%] lg:w-[75%]  p-3 mt-3 flex flex-col justify-center gap-6 items-center md:flex-row md:mt-20">
       {services.map((service, index) => (
         <ServicesCard
           key={index}

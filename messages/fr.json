@@ -1,0 +1,53 @@
+{
+    "leadGeneration": {
+      "title": {
+        "title1": "Automatisez",
+        "title2": "la génération de leads",
+        "title3": "à grande échelle"
+      },
+      "description": "Captain Data gère vos workflows de vente et marketing les plus ambitieux en extrayant, enrichissant et automatisant les données de plus de 30 sources sur le web.",
+      "buttons": {
+        "startFreeAutomation": "Démarrer l'automatisation gratuite",
+        "exploreWorkflows": "Explorer les workflows"
+      }
+    },
+    "dataExtraction": {
+      "buttons": {
+        "withoutCaptain": "Sans Captain",
+        "withCaptain": "Avec Captain"
+      },
+      "sections": [
+        {
+          "title": "Extraire",
+          "description": "Extrayez facilement des données structurées de plus de 30 sources comme LinkedIn, Twitter ou Google Maps."
+        },
+        {
+          "title": "Enrichir",
+          "description": "Enrichissez, filtrez et agrégez automatiquement vos données avec des fournisseurs tiers."
+        },
+        {
+          "title": "Intégrer",
+          "description": "Intégrez tout cela de manière transparente dans vos outils de travail : feuilles de calcul, CRM, outils de prospection..."
+        }
+      ]
+    },
+    "scaleAutomations": {
+      "title": "Prêt à passer à l'échelle avec vos automatisations ?",
+      "description1": "Essayez Captain Data dès aujourd'hui et libérez votre plein potentiel.",
+      "description2": "Vous êtes à quelques clics d'un tout nouveau monde d'automatisation.",
+      "cta": [
+        "Aucune carte de crédit requise.",
+        "14 jours d'essai gratuit sans engagement."
+      ],
+      "buttons": {
+        "startFreeAutomation": "Démarrer l'automatisation gratuite"
+      }
+    },
+    "techDebt": {
+      "title": "Combien vous coûte votre dette technique ?",
+      "description": "Les ingénieurs passent environ 33% de leur temps à gérer la dette technique. Découvrez ce qu'elle vous coûte avec notre calculateur de dette technique.",
+      "buttons": {
+        "calculateYourCost": "Calculer votre coût"
+      }
+    }
+  }

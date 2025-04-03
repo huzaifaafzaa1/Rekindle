@@ -1,9 +1,9 @@
-import React from 'react'
+import ConsultationPage from "@/screens/consultation"
 
 const Consultation = () => {
   return (
     <div>
-      Consultation
+      <ConsultationPage/>
     </div>
   )
 }

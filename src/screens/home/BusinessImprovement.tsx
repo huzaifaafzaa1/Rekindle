@@ -10,11 +10,10 @@ const businessData = [
 
 const BusinessImprovement = () => {
   return (
-    <div className='mt-3 mx-2 bg-slate-50 flex justify-evenly flex-col md:flex-row md:mt-20 border-2 '>
-      <div className='flex flex-col items-center justify-center px-4'>
-        <h1 className='text-3xl md:text-6xl my-2'>
-          Join us for business <br /> 
-          <span className='font-medium md:font-bold'>Improvement</span>
+    <div className='mx-auto w-[90%] lg:w-[75%] mt-3  bg-slate-50 flex justify-evenly flex-col md:flex-row md:mt-20 '>
+      <div className='flex flex-col justify-center px-4'>
+        <h1 className='text-3xl md:text-5xl my-2'>
+          Join us for business <span className='font-medium md:font-bold'>Improvement</span>
         </h1>
         <p className='my-2'>Hundreds of businesses are using our services</p>
         <div>
@@ -22,7 +21,7 @@ const BusinessImprovement = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-2 gap-6'>
+      <div className='shrink-0 grid grid-cols-2 gap-6'>
         {businessData.map((data, index) => (
           <BusinessImprovementCard key={index} icon={data.icon} title={data.title} text={data.text} />
         ))}

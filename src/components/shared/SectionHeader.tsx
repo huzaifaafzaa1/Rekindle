@@ -7,7 +7,7 @@ type SectionHeaderProps = {
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({ title, description}) => {
   return (
-    <div className="text-center mx-auto w-[50%]">
+    <div className="text-center mx-auto w-[90%] lg:w-[75%] ">
       <h2 className="text-2xl  md:text-4xl font-bold">{title}</h2>
       <p className="text-[var(--color-light-slate)] mt-2">{description}</p>
     </div>

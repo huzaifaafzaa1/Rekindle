@@ -14,7 +14,7 @@ const logos=[
 
 const TitleWithLogos: React.FC<TitleWithLogosProps> = ({title}) => {
   return (
-    <div className=" my-3 mt-3 md:mt-20 border-2">
+    <div className="mx-auto w-[90%] lg:w-[75%] my-3 mt-3 md:mt-20 ">
         <h1 className="text-center text-4xl font-medium my-5">{title}</h1>
         <div className="my-3 flex justify-center items-center">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 place-items-center">

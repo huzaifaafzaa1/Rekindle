@@ -18,13 +18,13 @@ const logos = [
 
 const FindingLeads = () => {
   return (
-    <div className="mt-3  md:mt-20">
+    <div className="mx-auto w-[90%] lg:w-[75%] mt-3  md:mt-20 ">
         <SectionHeader 
         title="How do we find your leads?" 
         description="Let our marketing experts connect you instantly with local customers currently shopping for a vehicle. A targeted marketing program through our trusted media channels, including." 
       />
       <div className="mt-10 flex justify-center items-center">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center w-3/4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-items-center ">
           {logos.map((logo, index) => (
           <div key={index} className="flex items-center">
           <Image src={logo.src} alt={logo.name} width={160} height={70} className="h-auto" />

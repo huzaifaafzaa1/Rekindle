@@ -19,12 +19,12 @@ const services = [
 
 const WinLocalJobs = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center gap-5 mt-3 md:mt-10 ">
+    <div className="w-[90%] lg:w-[75%] mx-auto flex flex-col lg:flex-row justify-center gap-5 mt-3 md:mt-10 ">
       <div className="p-4 ">
-        <h1 className="text-3xl md:text-5xl">Win local Jobs and <br /> <span className="font-bold">grow your business</span></h1>
+        <h1 className="text-3xl md:text-5xl">Win local Jobs and <span className="font-bold">grow your business</span></h1>
         <p className="mt-4 text-[var(--color-light-slate)]">View opportunities in your area for free!</p>
         <ServiceProviderForm />
-        <p className="mt-4 text-lg font-semibold">Popular services</p>
+        <p className="mt-4 text-sm md:text-lg font-semibold">Popular services</p>
         <div className="grid sm:grid-cols-2 gap-3 mt-2">
           {services.map((service, index) => (
             <div key={index} className="flex items-center gap-2 text-gray-700">

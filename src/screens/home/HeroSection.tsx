@@ -8,14 +8,14 @@ const HeroSection = () => {
     { id: "04", text: "LEAD GENERATION" },
   ];
   return (
-    <div className="herosection h-screen relative bg-gradient-to-r from-[var(--color-blue-gradient-start)] to-[var(--color-blue-gradient-end)] ">
+    <div className=" herosection h-screen relative bg-gradient-to-r from-[var(--color-blue-gradient-start)] to-[var(--color-blue-gradient-end)] ">
       {/*background Image  */}
       <div className="absolute h-[80vh] w-full ">
         <Image src="/images/herobackground.svg" alt="" height={0} width={0} fill className="object-cover" />
       </div>
 
       {/* text of herosection */}
-      <div className="absolute top-[10%] left-[10%] md:top-[15%] md:left-[15%]">
+      <div className="absolute top-[10%] left-[7%] lg:top-[15%] lg:left-[13%]">
         {services.map(({ id, text, isFirst }) => (
           <div key={id} className="flex gap-3 items-center my-2">
             <p
@@ -35,11 +35,12 @@ const HeroSection = () => {
         ))}
       </div>
 
-      <div className="absolute top-[20%] left-[20%] z-10">
-        <p className="text-white hidden  md:block">We Sell Leads</p>
+      <div className="absolute top-[20%] left-[18%] z-10">
+        <p className="text-white hidden  lg:block">We Sell Leads</p>
       </div>
 
-      <div className="absolute bottom-[10%] left-[10%] md:left-[15%] h-[50px] w-[50px] flex justify-center items-center">
+     {/*bottom icon  */}
+      <div className="absolute bottom-[10%] left-[7%] lg:left-[13%] h-[50px] w-[50px] flex justify-center items-center">
         <Image src="/icons/down.svg" alt="" height={50} width={50} />
       </div>
 

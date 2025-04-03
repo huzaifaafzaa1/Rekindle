@@ -29,7 +29,7 @@ const testimonials = [
 
 const CustomerSuccessStories = () => {
   return (
-    <div className="mt-3 mx-2 md:mt-20 border-2">
+    <div className="mx-auto w-[90%] lg:w-[75%] mt-3  md:mt-20 ">
       <div className="text-center my-4">
         <h1 className="sm:text-[28px] md:text-[32px] font-semibold my-2">Customer success stories</h1>
         <p className="text-[var(--color-light-slate)]">See what other small businesses have to say about Bark</p>

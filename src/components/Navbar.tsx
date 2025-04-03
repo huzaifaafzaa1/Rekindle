@@ -4,22 +4,25 @@ import CustomButton from "./shared/CustomButton";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import Link from "next/link";
-import { CircleUserRound } from 'lucide-react';
+import { CircleUserRound, Shell } from "lucide-react";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const segment = useSelectedLayoutSegment(); // ✅ Works better in Next.js 15
+
+  const isHomePage = segment === null; // Null means it's the root ("/")
+
   return (
-    <nav className="navbar h-[60px] max-w-full bg-white flex items-center justify-around ">
+    <nav className="px-5 w-[92%] lg:w-[77%] mx-auto navbar h-[60px] bg-white flex items-center justify-between">
       <div className="flex justify-center items-center gap-8">
-        <div className="flex gap-1 justify-center items-center ">
-          <div className="h-[35px] w-[35px] flex justify-center items-center">
-            <Image src="/logos/logo.svg" height={35} width={35} alt=""></Image>
-          </div>
+        <div className="flex gap-1 justify-center items-center">
+          <Shell size={36} color={isHomePage ? "#2447A2" : "#000000"} />
           <p className="font-josefin-sans text-[28px] font-semibold text-center">
             Rekindle
           </p>
         </div>
-        <div className="relative group z-10 ">
+        <div className="relative group z-10">
           <div className="flex justify-center items-center gap-2 cursor-pointer">
             <p>Explore</p>
             <div className="h-[8px] w-[8px]">
@@ -50,7 +53,7 @@ const Navbar = () => {
       </div>
 
       {/* buttons */}
-      <div className=" hidden md:flex gap-2 justify-center items-center">
+      <div className="hidden md:flex gap-2 justify-center items-center">
         <CustomButton
           label="Log in"
           textColor="text-black"
@@ -59,12 +62,12 @@ const Navbar = () => {
         <CustomButton
           label="Join as a Professional"
           textColor="text-white"
-          bgColor="bg-[var(--color-green-primary)]"
-          iconLeft={<CircleUserRound size={20}/>}
+          bgColor={isHomePage ? "bg-[var(--color-green-primary)]" : "bg-[#2563EB]"}
+          iconLeft={<CircleUserRound size={20} />}
         />
       </div>
 
-      {/* mobie buttons */}
+      {/* mobile buttons */}
       <button
         className="md:hidden flex justify-center items-center h-[30px] w-[30px]"
         onClick={() => setIsOpen(!isOpen)}
@@ -83,8 +86,8 @@ const Navbar = () => {
           <CustomButton
             label="Join as a Professional"
             textColor="text-white"
-            bgColor="bg-[var(--color-green-primary)]"
-            iconLeft="/icons/user.svg"
+            bgColor={isHomePage ? "bg-[var(--color-green-primary)]" : "bg-[#2563EB]"}
+            iconLeft={<CircleUserRound size={20} />}
           />
         </div>
       )}

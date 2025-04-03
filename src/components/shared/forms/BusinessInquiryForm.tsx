@@ -92,7 +92,6 @@ const BusinessInquiryForm = () => {
             {...register("website")}
           />
         </div>
-
        <CustomButton label="Submit" textColor="white" bgColor="bg-[var(--color-blue-primary)]"/>
       </form>
     </div>
